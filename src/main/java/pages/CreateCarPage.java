@@ -11,13 +11,13 @@ public class CreateCarPage extends BasePage {
     @FindBy(css = "[id^='custom_entity_type_LicensePlate']")
     public WebElement licensePlateElement;
 
-    @FindBy (name= "custom_entity_type[Driver]")
+    @FindBy(name = "custom_entity_type[Driver]")
     public WebElement driverElement;
 
     @FindBy(name = "custom_entity_type[Location]")
     public WebElement locationElement;
 
-    @FindBy(xpath = "//div[@class='btn-group pull-right open']/button[contains(text(),'Save and Close')]")
+    @FindBy(css = "[class='btn btn-success action-button']")
     public WebElement saveAndCloseButtonElement;
 
     @FindBy(css = "div[id*='FuelType']")
@@ -28,24 +28,21 @@ public class CreateCarPage extends BasePage {
     public WebElement logoElement;
 
 
-
-
-
-
-
-
     /**
      * This method stands for selecting tags
      * Provide tag name to select
      * If checkbox already selected, it will not do anything
      *
-     * @param tagName
+     * @param tagName - represents name of tag that has to be selected, like Junior, Senior or Purchased
      * @return webelement of checkbox that was selected
+     * <p>
+     * CreateCarPage createCarPage = new CreateCarPage();
+     * <p>
+     * createCarPage.selectTags("Senior"); // Senior tag will be selected
      */
     public WebElement selectTags(String tagName) {
-        //locator for check box is based on label name
+        //locator for checkbox is based on label name
         //label and checkbox are siblings
-
         String locator = "//label[text()='" + tagName + "']/preceding-sibling::input[@type='checkbox']";
         WebElement checkBox = Driver.get().findElement(By.xpath(locator));
         BrowserUtils.waitForVisibility(checkBox, 15);
@@ -55,6 +52,7 @@ public class CreateCarPage extends BasePage {
         }
         return checkBox;
     }
+
     /**
      * Select fuel type by visible text
      *
@@ -73,11 +71,14 @@ public class CreateCarPage extends BasePage {
         BrowserUtils.waitForClickablility(fuelTypeSelectionElement, 15);
         fuelTypeSelectionElement.click();
     }
+
+    /**
+     * This method will upload a file
+     * File from your computer!
+     * @param pathToTheFile that you want to upload
+     */
     public void uploadLogo(String pathToTheFile){
-        logoElement.sendKeys(pathToTheFile);
         BrowserUtils.waitForVisibility(logoElement, 15);
         logoElement.sendKeys(pathToTheFile);
     }
-
-
 }

@@ -45,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Dec 9, 2019 04:51:12 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Dec 9, 2019 05:26:44 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -60,7 +60,8 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -103,10 +104,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='14.286%'><span class='strong'>1</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>7</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='85.714%'>6</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -127,14 +128,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to Dashboard</span>
-						<span class='test-time'>Dec 9, 2019 04:51:18 PM</span>
+						<span class='test-time'>Dec 9, 2019 05:26:48 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:51:18 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:51:21 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+549ms</span>
+	<span class='label start-time'>Dec 9, 2019 05:26:48 PM</span>
+	<span class='label end-time'>Dec 9, 2019 05:26:52 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+112ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -148,7 +149,7 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:51:21 PM</td>
+				<td class='timestamp'>5:26:52 PM</td>
 				<td class='step-details'>
 						smokeTest
 					
@@ -156,30 +157,16 @@
 			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:51:21 PM</td>
+				<td class='timestamp'>5:26:52 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="title title-level-1">...</span> is not clickable at point (67, 56). Other element would receive the click: <div class="loader-mask shown">...</div>
-  (Session info: chrome=78.0.3904.108)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-Q20LUCJ9', ip: '10.0.0.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\stata\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54267}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 95793276eb82b29fc266f3426fedc18f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.BasePage.navigateTo(BasePage.java:85)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:18)
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Dashboard] but found []
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -212,21 +199,21 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 	</table>
 </div>
 						<ul class='screenshots'>
-							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-51.png' src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-51.png' data-src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-51.png'></li>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-26.png' src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-26.png' data-src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-26.png'></li>
 						</ul>
 					</div>
 				</li>
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to All Manage Dashboards</span>
-						<span class='test-time'>Dec 9, 2019 04:51:26 PM</span>
+						<span class='test-time'>Dec 9, 2019 05:26:57 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:51:26 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:51:31 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+774ms</span>
+	<span class='label start-time'>Dec 9, 2019 05:26:57 PM</span>
+	<span class='label end-time'>Dec 9, 2019 05:26:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+599ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -240,7 +227,7 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:51:31 PM</td>
+				<td class='timestamp'>5:26:59 PM</td>
 				<td class='step-details'>
 						smokeTest
 					
@@ -248,7 +235,7 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:51:31 PM</td>
+				<td class='timestamp'>5:26:59 PM</td>
 				<td class='step-details'>
 						<textarea disabled class="code-block">java.lang.AssertionError: expected [All Manage Dashboards] but found []
 	at org.testng.Assert.fail(Assert.java:96)
@@ -290,21 +277,21 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 	</table>
 </div>
 						<ul class='screenshots'>
-							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-51.png' src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-51.png' data-src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-51.png'></li>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-26.png' src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-26.png' data-src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-26.png'></li>
 						</ul>
 					</div>
 				</li>
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to All Cars</span>
-						<span class='test-time'>Dec 9, 2019 04:51:35 PM</span>
+						<span class='test-time'>Dec 9, 2019 05:27:04 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:51:35 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:51:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+788ms</span>
+	<span class='label start-time'>Dec 9, 2019 05:27:04 PM</span>
+	<span class='label end-time'>Dec 9, 2019 05:27:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+235ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -318,7 +305,7 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:51:41 PM</td>
+				<td class='timestamp'>5:27:07 PM</td>
 				<td class='step-details'>
 						smokeTest
 					
@@ -326,7 +313,7 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:51:41 PM</td>
+				<td class='timestamp'>5:27:07 PM</td>
 				<td class='step-details'>
 						<textarea disabled class="code-block">java.lang.AssertionError: expected [All Cars] but found []
 	at org.testng.Assert.fail(Assert.java:96)
@@ -368,21 +355,21 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 	</table>
 </div>
 						<ul class='screenshots'>
-							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-51.png' src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-51.png' data-src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-51.png'></li>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-27.png' src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-27.png' data-src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-27.png'></li>
 						</ul>
 					</div>
 				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to All Accounts</span>
-						<span class='test-time'>Dec 9, 2019 04:51:46 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Dec 9, 2019 05:27:11 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:51:46 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:51:51 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+845ms</span>
+	<span class='label start-time'>Dec 9, 2019 05:27:11 PM</span>
+	<span class='label end-time'>Dec 9, 2019 05:27:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+385ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -394,73 +381,30 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:51:51 PM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:27:17 PM</td>
 				<td class='step-details'>
-						smokeTest
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:51:51 PM</td>
-				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [All Accounts] but found []
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</textarea>
+						Verified that page subtitle 'All Accounts' is displayed
 					
 				</td>
 			</tr>
 		</tbody>
 	</table>
 </div>
-						<ul class='screenshots'>
-							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-51.png' src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-51.png' data-src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-51.png'></li>
-						</ul>
 					</div>
 				</li>
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to All Calls</span>
-						<span class='test-time'>Dec 9, 2019 04:51:56 PM</span>
+						<span class='test-time'>Dec 9, 2019 05:27:21 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:51:56 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:52:01 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+905ms</span>
+	<span class='label start-time'>Dec 9, 2019 05:27:21 PM</span>
+	<span class='label end-time'>Dec 9, 2019 05:27:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+462ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -474,7 +418,7 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:52:01 PM</td>
+				<td class='timestamp'>5:27:24 PM</td>
 				<td class='step-details'>
 						smokeTest
 					
@@ -482,16 +426,30 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:52:01 PM</td>
+				<td class='timestamp'>5:27:24 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [All Calls] but found []
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:22)
+						<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-Q20LUCJ9', ip: '10.0.0.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\stata\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55375}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fa67d4f107e2c11fa173fcd4e7f38f0f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pages.BasePage.navigateTo(BasePage.java:89)
+	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -524,21 +482,21 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 	</table>
 </div>
 						<ul class='screenshots'>
-							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-52.png' src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-52.png' data-src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-52.png'></li>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-27.png' src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-27.png' data-src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-27.png'></li>
 						</ul>
 					</div>
 				</li>
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to All Calendar Events</span>
-						<span class='test-time'>Dec 9, 2019 04:52:06 PM</span>
+						<span class='test-time'>Dec 9, 2019 05:27:28 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:52:06 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:52:12 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+69ms</span>
+	<span class='label start-time'>Dec 9, 2019 05:27:28 PM</span>
+	<span class='label end-time'>Dec 9, 2019 05:28:01 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+529ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -552,7 +510,7 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:52:12 PM</td>
+				<td class='timestamp'>5:28:01 PM</td>
 				<td class='step-details'>
 						smokeTest
 					
@@ -560,16 +518,18 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:52:12 PM</td>
+				<td class='timestamp'>5:28:01 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [All Calendar Events] but found []
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:22)
+						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (d81bec0c807b57b17dd54d2526e4d14d)] -> xpath: //*[normalize-space()='Calendar Events' and @class='title title-level-2']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-Q20LUCJ9', ip: '10.0.0.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\stata\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d81bec0c807b57b17dd54d2526e4d14d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.BasePage.navigateTo(BasePage.java:88)
+	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -602,21 +562,21 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 	</table>
 </div>
 						<ul class='screenshots'>
-							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-52.png' src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-52.png' data-src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-52.png'></li>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-28.png' src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-28.png' data-src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-28.png'></li>
 						</ul>
 					</div>
 				</li>
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to Open Opportunities</span>
-						<span class='test-time'>Dec 9, 2019 04:52:19 PM</span>
+						<span class='test-time'>Dec 9, 2019 05:28:05 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 04:52:19 PM</span>
-	<span class='label end-time'>Dec 9, 2019 04:52:24 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+200ms</span>
+	<span class='label start-time'>Dec 9, 2019 05:28:05 PM</span>
+	<span class='label end-time'>Dec 9, 2019 05:28:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+528ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -630,7 +590,7 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:52:24 PM</td>
+				<td class='timestamp'>5:28:09 PM</td>
 				<td class='step-details'>
 						smokeTest
 					
@@ -638,9 +598,9 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>4:52:24 PM</td>
+				<td class='timestamp'>5:28:09 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [Open Opportunities] but found []
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [Open Opportunities] but found [Dashboard]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -680,7 +640,7 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 	</table>
 </div>
 						<ul class='screenshots'>
-							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-52.png' src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-52.png' data-src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-16-52.png'></li>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-28.png' src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-28.png' data-src='C:\Users\stata\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-28.png'></li>
 						</ul>
 					</div>
 				</li>
@@ -724,8 +684,8 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.ElementClickInterceptedException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+						<span class='exception-name'>java.lang.AssertionError</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>4</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -739,31 +699,17 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 9, 2019 04:51:18 PM</td>
+										<td>Dec 9, 2019 05:26:48 PM</td>
 										<td class='linked' test-id='1'>Verify that page subtitle is equals to Dashboard</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="title title-level-1">...</span> is not clickable at point (67, 56). Other element would receive the click: <div class="loader-mask shown">...</div>
-  (Session info: chrome=78.0.3904.108)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-Q20LUCJ9', ip: '10.0.0.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\stata\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54267}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 95793276eb82b29fc266f3426fedc18f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.BasePage.navigateTo(BasePage.java:85)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:18)
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Dashboard] but found []
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -791,29 +737,8 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 </textarea>
 										</td>
 									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.AssertionError</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>6</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
 									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Dec 9, 2019 04:51:26 PM</td>
+										<td>Dec 9, 2019 05:26:57 PM</td>
 										<td class='linked' test-id='2'>Verify that page subtitle is equals to All Manage Dashboards</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: expected [All Manage Dashboards] but found []
@@ -852,7 +777,7 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 										</td>
 									</tr>
 									<tr>
-										<td>Dec 9, 2019 04:51:35 PM</td>
+										<td>Dec 9, 2019 05:27:04 PM</td>
 										<td class='linked' test-id='3'>Verify that page subtitle is equals to All Cars</td>
 										<td>
 											<textarea disabled class="code-block">java.lang.AssertionError: expected [All Cars] but found []
@@ -891,127 +816,10 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 										</td>
 									</tr>
 									<tr>
-										<td>Dec 9, 2019 04:51:46 PM</td>
-										<td class='linked' test-id='4'>Verify that page subtitle is equals to All Accounts</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [All Accounts] but found []
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Dec 9, 2019 04:51:56 PM</td>
-										<td class='linked' test-id='5'>Verify that page subtitle is equals to All Calls</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [All Calls] but found []
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Dec 9, 2019 04:52:06 PM</td>
-										<td class='linked' test-id='6'>Verify that page subtitle is equals to All Calendar Events</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [All Calendar Events] but found []
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Dec 9, 2019 04:52:19 PM</td>
+										<td>Dec 9, 2019 05:28:05 PM</td>
 										<td class='linked' test-id='7'>Verify that page subtitle is equals to Open Opportunities</td>
 										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [Open Opportunities] but found []
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [Open Opportunities] but found [Dashboard]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -1019,6 +827,142 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 	at org.testng.Assert.assertEquals(Assert.java:453)
 	at org.testng.Assert.assertEquals(Assert.java:463)
 	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.ElementNotInteractableException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 9, 2019 05:27:21 PM</td>
+										<td class='linked' test-id='5'>Verify that page subtitle is equals to All Calls</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-Q20LUCJ9', ip: '10.0.0.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\stata\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55375}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fa67d4f107e2c11fa173fcd4e7f38f0f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pages.BasePage.navigateTo(BasePage.java:89)
+	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.TimeoutException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 9, 2019 05:27:28 PM</td>
+										<td class='linked' test-id='6'>Verify that page subtitle is equals to All Calendar Events</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (d81bec0c807b57b17dd54d2526e4d14d)] -> xpath: //*[normalize-space()='Calendar Events' and @class='title title-level-2']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-Q20LUCJ9', ip: '10.0.0.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\stata\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d81bec0c807b57b17dd54d2526e4d14d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at pages.BasePage.navigateTo(BasePage.java:88)
+	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1080,19 +1024,19 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 9, 2019 04:51:12 PM</div>
+					<div class='panel-lead'>Dec 9, 2019 05:26:44 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 9, 2019 04:52:25 PM</div>
+			 		<div class='panel-lead'>Dec 9, 2019 05:28:10 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 12s+637ms</div>
+					<div class='panel-lead'>0h 1m 26s+194ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1106,7 +1050,7 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 						</tr>
 							<tr>
 								<td>Environment</td>
-								<td>QA1</td>
+								<td>https://qa1.vytrack.com/</td>
 							</tr>
 							<tr>
 								<td>Browser</td>
@@ -1128,13 +1072,13 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 		<script>
 			var statusGroup = {
                 parentCount: 7,
-				passParent: 0,
-				failParent: 7,
+				passParent: 1,
+				failParent: 6,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 7,
+				exceptionsParent: 6,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -1159,7 +1103,7 @@ Session ID: 95793276eb82b29fc266f3426fedc18f
 		</script>
 		<script>
 			var timeline = {
-			        "Verify that page subtitle is equals to Dashboard":3.549,"Verify that page subtitle is equals to All Manage Dashboards":4.774,"Verify that page subtitle is equals to All Cars":5.788,"Verify that page subtitle is equals to All Accounts":4.845,"Verify that page subtitle is equals to All Calls":5.905,"Verify that page subtitle is equals to All Calendar Events":6.069,"Verify that page subtitle is equals to Open Opportunities":5.2
+			        "Verify that page subtitle is equals to Dashboard":4.112,"Verify that page subtitle is equals to All Manage Dashboards":2.599,"Verify that page subtitle is equals to All Cars":3.235,"Verify that page subtitle is equals to All Accounts":6.385,"Verify that page subtitle is equals to All Calls":2.462,"Verify that page subtitle is equals to All Calendar Events":32.529,"Verify that page subtitle is equals to Open Opportunities":4.528
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

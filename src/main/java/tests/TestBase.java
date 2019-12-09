@@ -26,40 +26,47 @@ public abstract class TestBase {
     protected static ExtentHtmlReporter extentHtmlReporter;
     //    Defines a test. You can add logs, snapshots, assign author and categories to a test and its children.
     protected static ExtentTest extentTest;
+
     //        <parameter name="test" value="regression"></parameter>
     @BeforeTest
-    @Parameters("test")
-    public void beforeTest(@Optional String test){
+    @Parameters({"test", "env_url"})
+    public void beforeTest(@Optional String test, @Optional String env_url) {
         //location of report
         //it's gonna be next to target folder, test-output folder
         String reportName = "report";
-        if(test != null){
+        if (test != null) {
             reportName = test;
         }
-        String filePath = System.getProperty("user.dir") + "/test-output/"+reportName+".html";
+        String filePath = System.getProperty("user.dir") + "/test-output/" + reportName + ".html";
         extentReports = new ExtentReports();
         extentHtmlReporter = new ExtentHtmlReporter(filePath);
         extentReports.attachReporter(extentHtmlReporter);
         extentHtmlReporter.config().setReportName("Vytrack Test Results");
         //system information
-        extentReports.setSystemInfo("Environment", "QA1");
+        String env = ConfigurationReader.getProperty("url");
+        if (env_url != null) {
+            env = env_url;
+        }
+        extentReports.setSystemInfo("Environment", env);
         extentReports.setSystemInfo("Browser", ConfigurationReader.getProperty("browser"));
         extentReports.setSystemInfo("OS", System.getProperty("os.name"));
     }
 
 
     @AfterTest
-    public void afterTest(){
+    public void afterTest() {
 //         Writes test information from the started reporters to their output view
         extentReports.flush();
     }
 
-
+    //        <parameter name="env_url" value="https://qa3.vytrack.com/"></parameter>
     @BeforeMethod
     @Parameters("env_url")
-    public void setup(@Optional String env_url){
+    public void setup(@Optional String env_url) {
         String url = ConfigurationReader.getProperty("url");
-        if(env_url !=null){
+        //if name parameter was set, then use it
+        //if it's null that means it was not set
+        if (env_url != null) {
             url = env_url;
         }
         Driver.get().get(url);
@@ -67,8 +74,8 @@ public abstract class TestBase {
 
     //ITestResult class describes the result of a test. (in TestNG)
     @AfterMethod
-    public void teardown(ITestResult result){
-        if(result.getStatus() == ITestResult.FAILURE){
+    public void teardown(ITestResult result) {
+        if (result.getStatus() == ITestResult.FAILURE) {
             extentTest.fail(result.getName());
             extentTest.fail(result.getThrowable());
             try {
@@ -80,11 +87,12 @@ public abstract class TestBase {
                 //print error info
                 e.printStackTrace();
             }
-        }else if(result.getStatus() == ITestResult.SKIP){
-            extentTest.skip("Test case was skipped : "+result.getName());
+        } else if (result.getStatus() == ITestResult.SKIP) {
+            extentTest.skip("Test case was skipped : " + result.getName());
         }
         Driver.close();
     }
+
 
 
 }

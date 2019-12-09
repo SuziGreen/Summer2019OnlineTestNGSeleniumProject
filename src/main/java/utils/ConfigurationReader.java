@@ -10,7 +10,8 @@ public class ConfigurationReader {
     //to values based on key names
     //we use Properties class to load custom .properties files
     private static Properties configFile;
-    static{
+
+    static {
         try {
             //provides access to file
             //try/catch block stands for handling exceptions
@@ -20,7 +21,7 @@ public class ConfigurationReader {
             FileInputStream fileInputStream = new FileInputStream("configuration.properties");
             //initialize properties object
             configFile = new Properties();
-            //load your properties file
+            //load configuration.properties file
             configFile.load(fileInputStream);
             //close input stream
             fileInputStream.close();
@@ -29,7 +30,9 @@ public class ConfigurationReader {
             e.printStackTrace();
         }
     }
-    public static String getProperty(String key){
+
+    public static String getProperty(String key) {
         return configFile.getProperty(key);
     }
-    }
+
+}

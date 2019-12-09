@@ -6,17 +6,17 @@ import utils.BrowserUtils;
 
 public class VehiclesPage extends BasePage {
 
+
     @FindBy(css = "[title='Create Car']")
     public WebElement createACarElement;
-    /*
-    Use this method to click on "Create a Car" button
-    method already contains waits to handle syncronization issues'
+
+    /**
+     * Use this method to click on "Create a Car" button
+     * Method already contains waits to handle synchronization issues
      */
-
-
-    public void clickToCreateACar() {
-        BrowserUtils.waitForClickablility(createACarElement,10);
-        BrowserUtils.waitForClickablility(createACarElement, 10);
+    public void clickToCreateACar(){
+        BrowserUtils.waitForVisibility(createACarElement, 15);
+        BrowserUtils.waitForClickablility(createACarElement, 15);
         createACarElement.click();
     }
     }
